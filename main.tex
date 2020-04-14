@@ -1,0 +1,120 @@
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% PAGE MARGINS
+%\usepackage[scale=0.75]{geometry}
+\usepackage[top=1.2cm, bottom=1.2cm, left=1.1cm, right=1.1cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% PERSONAL DATA
+\name{Jean}{Bon}
+\title{Looking for a position of XX \newline Available ASAP}
+\extrainfo{Skype: skype\_id \\
+						Full clean driving license \\ 
+						Reference: on demand}
+\address{1 rue du palais}{75000 Paris}{France}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33~6~00~00~00~00}
+\email{jeanbon@gmail.com}
+%\homepage{www.johndoe.com}
+%\social[linkedin]{john.doe}
+%\social[skype]{live:drien_1991} % does not work
+\social[linkedin][http://fr.linkedin.com/]{jean-bon}
+\social[github][http://github.com/]{jbon}
+\photo[64pt][0.4pt]{photo_cv.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Curious, persevering, team player, good writing and presentation skills}
+\quote{Key skills: some skills}
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+\makecvtitle
+
+%---------------------------------------------------------------------
+%	EXPERIENCE
+%---------------------------------------------------------------------
+
+\section{Professional experience}
+
+% FIRST EXPERIENCE
+
+% "2em" changes the vertical space between paragraphs
+\cventry[2em]{January 2020 \newline December 2020}{Company name}{Address}{XX employees}{Position - Topic}{
+\begin{itemize}
+\item Role: did this 
+\item \textbf{Keywords}: XXXX
+\end{itemize}
+}
+
+% SECOND EXPERIENCE
+
+\cventry[2em]{Jan--Dec 2019}{Company name}{Address}{XX employees}{Position - Topic}{
+\begin{itemize}
+\item Role: did this 
+\item \textbf{Keywords}: XXXX
+\end{itemize}
+}
+
+%---------------------------------------------------------------------
+%	EDUCATION
+%---------------------------------------------------------------------
+
+\section{Education}
+
+\cventry[0.8em]{2018--2019}{Company name}{City, Country}{Subject}{}{}{}
+\cventry[0.8em]{2017}{Diploma of XX}{City, Country}{Subject}{Honors}{}
+
+% If you want to start a new page, uncomment the next line
+%\clearpage
+
+%---------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%---------------------------------------------------------------------
+
+\section{Technical skills}
+
+\cvitemwithcomment{Software}{\normalfont C/C++, \LaTeX, Microsoft Office Suite}{}
+\cvitemwithcomment{OS}{\normalfont Windows/Linux}{}
+
+%---------------------------------------------------------------------
+%	LANGUAGES
+%---------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Language 1}{Level}{Certification score}
+\cvitemwithcomment{Language 2}{Level}{Certification score}
+
+%---------------------------------------------------------------------
+%	VOLUNTEERING AND HOBBIES
+%---------------------------------------------------------------------
+
+\section{Miscellaneous}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cventry[0.65em]{2013--2014}{Association name}{Student association}{}{School}{Goal of the association}{}
+\cventry[0.65em]{From 2014}{Guitar}{}{Folk}{}{}{}
+
+
+\end{document}
